@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GramophoneActivity">
+
+
+    <TextView
+        android:layout_gravity="center"
+        android:text="留声机音乐播放"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.example.lenovo.zk_ljq_528.GramophoneView
+        android:id="@+id/gramophone_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:picture_radius="100dp"
+        app:disk_rotate_speed="0.2"
+        app:src="@drawable/b"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_play_pause"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="点击播放"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂停" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="停止" />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
